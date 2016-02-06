@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Dashboard">
+
+        <title>Galeria</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap core CSS -->
+        <link href="./plantillas/index/Theme/assets/css/bootstrap.css" rel="stylesheet">
+        <!--external css-->
+        <link href="./plantillas/index/Theme/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="./plantillas/index/Theme/assets/css/zabuto_calendar.css">
+        <link rel="stylesheet" type="text/css" href="./plantillas/index/Theme/assets/js/gritter/css/jquery.gritter.css" />
+        <link rel="stylesheet" type="text/css" href="./plantillas/index/Theme/assets/lineicons/style.css">    
+
+        <!-- Custom styles for this template -->
+        <link href="./plantillas/index/Theme/assets/css/style.css" rel="stylesheet">
+        <link href="./plantillas/index/Theme/assets/css/style-responsive.css" rel="stylesheet">
+        <link href="./plantillas/index/Theme/assets/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="./plantillas/index/Theme/assets/js/chart-master/Chart.js"></script>
+
+
+        <!-- Theme stylesheet -->
+        <link href="./plantillas/index/Theme/assets/css/style.default2.css" rel="stylesheet" id="theme-stylesheet">
+        
+        
+    </head>
+
+    <body>
+    <!-- intro-->
+    
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+        <div class="container">
+
+            <div class="navbar-collapse collapse" id="navigation">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="#intro">Intro</a>
+                    </li>
+                    <li><a href="#about">About</a>
+                    </li>
+                    <li><a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li><a href="index.php?action=view&target=index"><strong>Back</strong></a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            
+            <div id="mio1" class="navbar-header">
+                <a id="mio1" class="navbar-brand scrollTo" href="#intro">{email}</a>
+            </div>
+        </div>
+    </div>
+    <section id="intro" style="background-image: url('./plantillas/index/Theme/assets/img/ein-steig.jpg');" class="intro">      
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-12">
+              <p class="italic">Oh, hello, nice to meet you!</p>
+              <h1>Este es mi portfolio.</h1>
+              <p class="italic">Aquí encontrarán varias fotos, personales en su mayoría. Espero que las disfruten.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- intro end-->
+        <!-- about-->
+    <section id="about" class="text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="heading">About me</h2>
+            <p class="lead">Me suelen llamar {alias}</p>
+            {descripcion}
+            </div>
+          <div class="col-md-5 col-md-offset-1">
+            <p><img src="plantillas/index/user/avatar/{avatar}" alt="" class="img-responsive img-circle"></p>
+          </div>
+        </div>
+      </div>
+    <!-- about end-->
+
+            
+    <!-- Portfolio / gallery-->
+    <section id="portfolio" class="gallery">
+      <div class="container clearfix">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12 col-lg-8">
+                <h2 class="heading">Portfolio</h2>
+              </div>
+            </div>
+            {imagenes}
+        </div>
+      </div>
+    </section>
+    </section>
+    <!-- Portfolio / gallery end-->
+
+
+
+        <!-- js placed at the end of the document so the pages load faster -->
+        <script src="./plantillas/index/Theme/assets/js/jquery.js"></script>
+        <script src="./plantillas/index/Theme/assets/js/jquery-1.8.3.min.js"></script>
+        <script src="./plantillas/index/Theme/assets/js/bootstrap.min.js"></script>
+        <script class="include" type="text/javascript" src="./plantillas/index/Theme/assets/js/jquery.dcjqaccordion.2.7.js"></script>
+        <script src="./plantillas/index/Theme/assets/js/jquery.scrollTo.min.js"></script>
+        <script src="./plantillas/index/Theme/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+        <script src="./plantillas/index/Theme/assets/js/jquery.sparkline.js"></script>
+
+
+        <!--common script for all pages-->
+        <script src="./plantillas/index/Theme/assets/js/common-scripts.js"></script>
+
+        <script type="text/javascript" src="./plantillas/index/Theme/assets/js/gritter/js/jquery.gritter.js"></script>
+        <script type="text/javascript" src="./plantillas/index/Theme/assets/js/gritter-conf.js"></script>
+
+        <!--script for this page-->
+        <script src="./plantillas/index/Theme/assets/js/sparkline-chart.js"></script>    
+        <script src="./plantillas/index/Theme/assets/js/zabuto_calendar.js"></script>	
+
+
+        <script src="./plantillas/index/Theme/assets/js/fileinput.min.js" type="text/javascript"></script>
+        <script src="./plantillas/index/Theme/assets/js/fileinput.js" type="text/javascript"></script>
+        <!-- /#about -->
+        
+        
+        <!-- owl carousel -->
+        <script src="./plantillas/index/Theme/assets/js/owl.carousel.min.js"></script>
+        
+        <!-- jQuery scroll to -->
+        <script src="./plantillas/index/Theme/assets/js/jquery.scrollTo.min.js"></script>

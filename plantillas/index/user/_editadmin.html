@@ -1,0 +1,101 @@
+<div>
+    <a href="?action=view&target=imagenadmin&email={email}">
+        <button type="button" class="btn btn-lg btn-warning"><i class="fa fa-eye"></i> Editar Imágenes</button>
+    </a>
+</div>
+<br/>
+<div>
+    <a href="?action=view&target=user&user={email}">
+        <button type="button" class="btn btn-lg btn-primary"><i class="fa fa-eye"></i> Ver Galería</button>
+    </a>
+</div>
+<br/>
+<br/>
+<div id="kv-avatar-errors" class="center-block" style="width:800px;display:none"></div>
+<form class="text-center" action="?action=edit&target=avataradmin&user={email}" method="post" enctype="multipart/form-data">
+    <div class="kv-avatar center-block" style="width:200px">
+        <input id="avatar" name="avatar" type="file" class="file-loading">
+    </div>
+</form>
+<br/>
+<br/>
+<form class="form-horizontal style-form" method="post" action="?action=edit&target=useradmin&user={email}">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Alias</label>
+        <div class="col-sm-9">
+            <input name="alias" type="text" class="form-control" value="{alias2}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-9">
+            <input name="email" type="text" class="form-control" value="{email}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Fecha de Alta</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" value="{fecha}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Descripción</label>
+        <div class="col-sm-9">
+            <textarea name="descripcion" class="form-control">{descripcion}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Clave Nueva</label>
+        <div class="col-sm-9">
+            <input name="claveNueva" type="password" class="form-control"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 text-right">Galería Privada</label>
+        <div class="">
+            <div class="col-sm-4">
+                <div class="switch switch-square"
+                     data-on-label="<i class=' fa fa-check'></i>"
+                     data-off-label="<i class='fa fa-times'></i>">
+                    <input name="privado" type="checkbox" {checked}/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Plantilla</label>
+        <div class="col-sm-9">
+            <input name="plantilla" type="text" class="form-control" value="{planti}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 text-right">Administrador</label>
+        <div class="">
+            <div class="col-sm-4">
+                <div class="switch switch-square"
+                     data-on-label="<i class=' fa fa-check'></i>"
+                     data-off-label="<i class='fa fa-times'></i>">
+                    <input name="administrador" type="checkbox" {checked2}/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Estado</label>
+        <div class="radio">
+            <label>
+                <input type="radio" name="activo" id="optionsRadios1" value="1" {activo1}>
+                Activo
+            </label>
+            <label>
+                <input type="radio" name="activo" id="optionsRadios2" value="0" {activo0}>
+                Desactivo
+            </label>
+            <label>
+                <input type="radio" name="activo" id="optionsRadios2" value="-1" {activo-1}>
+                Baneado
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-success col-sm-12 text-right">Editar</button><br/><br/>
+</form>

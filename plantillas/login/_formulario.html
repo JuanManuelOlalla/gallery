@@ -1,0 +1,99 @@
+<div class="form">
+
+    <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="signup">   
+            <h1>Sign Up for Free</h1>
+
+            <form action="index.php?action=insert&target=user" method="post">
+                
+
+                <div class="field-wrap">
+                    <label>
+                        Email Address<span class="req">*</span>
+                    </label>
+                    <input type="email" name="email" required autocomplete="off"/>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Alias<span class="req">*</span>
+                    </label>
+                    <input type="text" name="alias" required autocomplete="off" />
+                </div>
+
+
+                <div class="field-wrap">
+                    <label>
+                        Set A Password<span class="req">*</span>
+                    </label>
+                    <input type="password" name="clave" required autocomplete="off"/>
+                </div>
+
+
+                <div class="field-wrap">
+                    <label>
+                        Repeat Password<span class="req">*</span>
+                    </label>
+                    <input type="password" name="clave2" required autocomplete="off"/>
+                </div>
+
+                <button type="submit" class="button button-block"/>Get Started</button>
+
+            </form>
+
+        </div>
+        
+        <div id="login">   
+            <h1>Welcome Back!</h1>
+
+            <form action="index.php?action=login&target=user" method="post">
+
+                <div class="field-wrap">
+                    <label>
+                        Email Address<span class="req">*</span>
+                    </label>
+                    <input type="email" name="email" required autocomplete="off"/>
+                </div>
+
+                <div class="field-wrap">
+                    <label>
+                        Password<span class="req">*</span>
+                    </label>
+                    <input type="password" name="clave" required autocomplete="off"/>
+                </div>
+
+                <p class="forgot"><a id="forgot" href="#">Forgot Password?</a></p>
+
+                <button class="button button-block"/>Log In</button>
+
+            </form>
+            
+            <div id="olvido">
+                <br/><hr/><br/>
+                <h1>Recover Password</h1>
+
+                <form action="index.php?action=recover&target=user" method="post">
+
+                    <div class="field-wrap">
+                        <label>
+                            Email Address<span class="req">*</span>
+                        </label>
+                        <input type="email" name="email" required autocomplete="off"/>
+                    </div>
+
+                    <button class="button button-block"/>RECOVER</button>
+                </form>
+            </div>
+
+        </div>
+
+        
+
+    </div><!-- tab-content -->
+
+</div> <!-- /form -->

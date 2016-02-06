@@ -1,0 +1,57 @@
+<div id="kv-avatar-errors" class="center-block" style="width:800px;display:none"></div>
+<form class="text-center" action="?action=edit&target=avatar" method="post" enctype="multipart/form-data">
+    <div class="kv-avatar center-block" style="width:200px">
+        <input id="avatar" name="avatar" type="file" class="file-loading">
+    </div>
+</form>
+<br/>
+<br/>
+<form class="form-horizontal style-form" method="post" action="?action=edit&target=user">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Alias</label>
+        <div class="col-sm-9">
+            <input name="alias" type="text" class="form-control" value="{alias}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-9">
+            <input name="email" type="text" class="form-control" value="{email}">
+            <span class="help-block">Si cambias de email tu cuenta de desactivará, recibirás un correo para reactivarla.</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Descripción</label>
+        <div class="col-sm-9">
+            <textarea name="descripcion" class="form-control">{descripcion}</textarea>
+            <span class="help-block">La descripción aparecerá en tu galería (max 2000 caractes)</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Clave Actual</label>
+        <div class="col-sm-9">
+            <input name="clave" type="password" class="form-control"/>
+        </div><br/><br/><br/>
+        <label class="col-sm-2 control-label">Clave Nueva</label>
+        <div class="col-sm-9">
+            <input name="claveNueva" type="password" class="form-control"/>
+        </div><br/><br/><br/>
+        <label class="col-sm-2 control-label">Repite la clave</label>
+        <div class="col-sm-9">
+            <input name="claveConfirmada" type="password" class="form-control"/>
+        </div>
+    </div>
+    <div class="form-group">
+    <label class="col-sm-2 text-right">Galería Privada</label>
+      <div class="">
+          <div class="col-sm-4">
+              <div class="switch switch-square"
+                   data-on-label="<i class=' fa fa-check'></i>"
+                   data-off-label="<i class='fa fa-times'></i>">
+                  <input name="privado" type="checkbox" {checked}/>
+              </div>
+          </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success col-sm-12 text-right">Editar</button><br/><br/>
+</form>
